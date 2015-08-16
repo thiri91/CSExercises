@@ -10,7 +10,12 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+         
+			Console.WriteLine("Enter distance: ");
+            double distance = Convert.ToDouble(Console.ReadLine());
+			
+            Console.WriteLine("{0}", distance*0.4+2.40);
+			
         }
     }
 }

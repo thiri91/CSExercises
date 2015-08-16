@@ -12,7 +12,7 @@ namespace CSExercises
         {
             Console.WriteLine("Enter an Double Number: ");
             double num = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Square Root Result is {0}", Math.Sqrt(num));
+            Console.WriteLine("{0}", Math.Sqrt(num));
         }
     }
 }

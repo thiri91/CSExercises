@@ -10,7 +10,9 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine("Enter an salary: ");
+            double num = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("{0:c}", num+(num*10/100)+(num*3/100));
         }
     }
 }
