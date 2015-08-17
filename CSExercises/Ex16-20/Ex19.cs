@@ -15,17 +15,12 @@ namespace CSExercises
            double ans=0.0;
             if (travel_km <= 0.5)
                 ans = 2.40;
-            else if (travel_km <= 8.5)
-            {
-                Console.WriteLine("ggg");
-                ans = 2.40 + 85 * 0.04+(travel_km * 10 - 85) * 0.05;
-            }                
-            else if (travel_km >= 9.0)
-            {
-                Console.WriteLine("fff");
+            else if (travel_km >= 0.5 && travel_km <= 8.5)           
+                ans = 2.40 +(travel_km * 10 - 5) * 0.04;                       
+            else if (travel_km >= 9.0)              
                 ans = 2.40 + 85 * 0.04+(travel_km*10- 90) * 0.05;
-            }
-            Console.WriteLine("{0}", Math.Ceiling(ans * 10) / 10);
+           
+            Console.WriteLine("{0}",ans);
 
         }
     }
