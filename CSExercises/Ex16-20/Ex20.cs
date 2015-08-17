@@ -19,15 +19,15 @@ namespace CSExercises
             int qty_mp3 = Convert.ToInt32(Console.ReadLine());
 
             double tv_dvd_charges = qty_tv * 900 + qty_dvd * 500;
-            double discount=0.0;
-            if (tv_dvd_charges <= 5000 && tv_dvd_charges >= 9999)
-                discount=tv_dvd_charges*10/100;
+           // double discount=0.0;
+            if (tv_dvd_charges >= 5000 && tv_dvd_charges >= 9999)
+                tv_dvd_charges *= 0.9;
             else if(tv_dvd_charges>=10000)
-                discount = tv_dvd_charges * 15 / 100;
-            tv_dvd_charges -= discount;
+                tv_dvd_charges *= 0.85;
+           // tv_dvd_charges -= discount;
 
             double ans = tv_dvd_charges+qty_mp3 * 700;
-            Console.WriteLine("{0}", ans);
+            Console.WriteLine("{0:c}", ans);
         }
     }
 }
