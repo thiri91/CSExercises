@@ -18,7 +18,7 @@ namespace CSExercises
 
             string nametype="";
 
-            if (gender.ToUpper().Equals('M'))
+            if (gender.ToUpper().Equals("M"))
             {
                 if (age >= 40)
                 {
@@ -29,7 +29,7 @@ namespace CSExercises
                     nametype = "Mr.";
                 }                
             }
-            else if (gender.ToUpper().Equals('F'))
+            else if (gender.ToUpper().Equals("F"))
             {
                 if (age >= 40)
                 {
@@ -37,6 +37,7 @@ namespace CSExercises
                 }
                 else if (age < 40)
                 {
+                    //Console.WriteLine("18");
                     nametype = "Mrs";
                 }               
             }

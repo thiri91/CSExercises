@@ -14,9 +14,9 @@ namespace CSExercises
             Console.WriteLine("Enter gender M or F:");
             string gender = Console.ReadLine();
             if (gender.Equals("M"))
-                Console.WriteLine("good Morning Mr.{0}", name);
+                Console.WriteLine("good Morning mr. {0}", name);
             else if (gender.Equals("F"))
-                Console.WriteLine("good Morning Ms.{1}", name);
+                Console.WriteLine("good Morning ms. {0}", name);
 
         }
     }
